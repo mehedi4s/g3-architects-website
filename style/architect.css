@@ -8,12 +8,11 @@
 .btn-primary{
     border-radius: 8px;
     background: #FF900E;
-    width: 180px;
-    height: 64px;
+    
     padding: 21px 25px;
     border: none;
     color: #FFF;
-    font-size: ;
+    font-size: 1.25rem;
     font-weight: 600;
 
 }
@@ -61,4 +60,29 @@ nav li a{
 .banner-description{
     color: #727272;
     line-height: 26px;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive style */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 40px;
+    }
 }
